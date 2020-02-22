@@ -1,3 +1,12 @@
-from django.shortcuts import render
+from django.views.generic import DetailView, TemplateView
 
-# Create your views here.
+from solo import models
+
+
+class StepDetailView(DetailView):
+    model = models.Step
+    template_name = 'step/detail.html'
+
+
+class StartTemplateView(TemplateView):
+    template_name = 'step/home.html'

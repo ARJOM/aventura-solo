@@ -1,0 +1,10 @@
+{% extends '../base.html' %}
+
+{% block title %}Passo {{object}}{% endblock %}
+
+{% block content %}
+    <p>{{ object.content }}</p>
+    {% for opcao in object.nextsteps.all %}
+        <a href="{% url 'solo:step-detail' opcao.id %} ">{{opcao}}</a>
+    {% endfor %}
+{% endblock %}

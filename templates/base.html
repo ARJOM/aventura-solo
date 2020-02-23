@@ -4,10 +4,13 @@
 <head>
     <meta charset='utf-8'>
     <title>{% block title %}Início{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body>
     <h1>O Guerreiro e o Dragão</h1>
-    {% block content %}
-    {% endblock %}
+    <div id="container">
+        {% block content %}
+        {% endblock %}
+    </div>
 </body>
 </html>

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+
+*{
+    font-family: "Trade Winds";
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#options{
+    flex-direction: row;
+}

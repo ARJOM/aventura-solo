@@ -1,6 +1,6 @@
 from django.views.generic import DetailView, TemplateView
 
-from solo import models
+from app.solo import models
 
 
 class StepDetailView(DetailView):

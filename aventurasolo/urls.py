@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # Solo
-    path('', include('solo.urls', namespace='passos'), name='solo')
+    path('', include('app.solo.urls', namespace='passos'), name='solo')
 ]

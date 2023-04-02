@@ -34,7 +34,7 @@ python manage.py migrate
 ```
 - Carregue as fixtures para o banco
 ```
-python manage.py loaddata solo/fixtures/aventura1.json
+python manage.py loaddata app/solo/fixtures/aventura1.json
 ```
 - Execute o projeto
 ```
